@@ -1,0 +1,70 @@
+.win-cont {
+  background-color: white;
+  width: 50vw;
+  height: 20vw;
+  margin-top: 20vh;
+  margin-left: 28vw;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.close {
+  font-size: 3em;
+  color: black;
+  font-weight: bold;
+
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+
+  margin-top: 2vh;
+}
+
+p {
+  text-align: right;
+  margin-left: 47vw;
+  margin-top: 1vh;
+  padding-right: 10px;
+  padding-bottom: 2px;
+  cursor: pointer;
+}
+/* p:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+} */
+
+.win-content {
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  justify-content: space-between;
+  margin-top: 10vh;
+}
+
+.footer-btn-submit {
+  font-size: 1em;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  margin-right: 2vw;
+  cursor: pointer;
+  background-color: green;
+}
+
+.footer-btn-cancel {
+  font-size: 1em;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: red;
+}

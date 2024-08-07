@@ -1,0 +1,56 @@
+/* navbar styling --start */
+.navbar {
+  justify-content: space-between;
+  display: flex;
+  line-height: 0;
+  padding-left: 20px;
+  background-color: #f1e9da;
+  z-index: 1;
+  text-decoration: none;
+  box-shadow: 5px 5px 15px 5px grey;
+}
+.navbar-logo {
+  font-size: 1.6em;
+  font-weight: bold;
+  padding-left: 10px;
+  line-height: 5;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.navbar-logo:hover {
+  color: green;
+  cursor: pointer;
+}
+
+.navbar-list {
+  line-height: 2;
+
+  width: 30vw;
+}
+
+.navbar-items {
+  display: flex;
+  font-size: 1.6em;
+  font-weight: bold;
+  line-height: 4;
+}
+
+.navbar-items li {
+  list-style-type: none;
+  padding-left: 40px;
+  font-family: "Times New Roman", Times, serif;
+}
+.navbar-items li Link {
+  text-decoration: none;
+}
+
+.notify {
+  margin-top: 32px;
+  font-size: 1.4em;
+}
+
+.active {
+  font-weight: bold;
+  color: green;
+}
