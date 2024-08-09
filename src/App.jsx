@@ -5,8 +5,9 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Products from "./components/Products";
 import Service from "./components/Service";
-import Comp1 from "./components/Comp1";
+
 import { createContext } from "react";
+import Comp3 from "./components/Comp3";
 
 const data = createContext();
 const data1 = createContext();
@@ -26,7 +27,7 @@ function App() {
 
       <data.Provider value={name}>
         <data1.Provider value={gender}>
-          <Comp1 />
+          <Comp3 />
         </data1.Provider>
       </data.Provider>
     </>

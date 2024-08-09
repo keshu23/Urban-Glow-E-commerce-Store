@@ -6,12 +6,12 @@ const Comp3 = () => {
   const myGender = useContext(data1);
 
   return (
-    <div>
+    <>
       <h2>
         {" "}
         Hey, my name is {firstName} and my gender is {myGender}
       </h2>
-    </div>
+    </>
   );
 };
 
