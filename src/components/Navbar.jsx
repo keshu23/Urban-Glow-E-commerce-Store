@@ -17,7 +17,7 @@ export default function Navbar() {
       <div className="navbar">
         <div className="navbar-logo">
           <NavLink to="/" activeClassName="active">
-            ReactJS
+           Urban Glow
           </NavLink>{" "}
         </div>
 
