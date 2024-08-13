@@ -1,4 +1,3 @@
-import Navbar from "./Navbar";
 import "../styles/Navbar.css";
 import "../styles/Service.css";
 
@@ -31,8 +30,6 @@ const Service = () => {
 
   return (
     <div>
-      <Navbar />
-
       {show.map((series, index) => (
         <div key={index} className="image_list">
           <img className="image" src={series.image} alt={series.name} />

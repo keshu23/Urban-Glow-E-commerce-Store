@@ -17,7 +17,7 @@ export default function Navbar() {
       <div className="navbar">
         <div className="navbar-logo">
           <NavLink to="/" activeClassName="active">
-            ReactJS
+            Urban Glow
           </NavLink>{" "}
         </div>
 
@@ -27,7 +27,7 @@ export default function Navbar() {
               <NavLink to="/home">Home </NavLink>
             </li>
             <li>
-              <NavLink to="/about" activeClassName="active">
+              <NavLink to="/product" activeClassName="active">
                 Products
               </NavLink>
             </li>

@@ -17,6 +17,7 @@
 
 //   if (error) {
 //     <div>Error:{error.message}</div>;
+
 //   }
 
 //   return (
@@ -43,7 +44,7 @@ import { useState } from "react";
 const ReactQur = () => {
   const [access, setAccess] = useState([]);
 
-  const { isLoading, error, data } = useQuery({
+  const { isLoading, error, } = useQuery({
     queryKey: ["movie"],
     queryFn: async () => {
       const response = await fetch("https://dummyjson.com/carts");
@@ -59,16 +60,13 @@ const ReactQur = () => {
 
   return (
     <>
-      {access.map((shw, index) => (
-        <div key={index}>
-          {shw.products.map((shw1, index) => (
-            <div key={index}>
-              {shw1.title}
-              <img src={shw1.thumbnail} alt="" />
-            </div>
-          ))}
-        </div>
+      <div>
+      {access.map((shw,index) => (
+        <span key={index}><img src={shw.products.thumbnail}  alt="" />   </span>
+
       ))}
+      </div>
+      
     </>
   );
 };
