@@ -1,0 +1,9 @@
+.tooltip-text {
+  text-align: center;
+}
+
+.tooltip-text-hov {
+  text-align: right;
+  background-color: aqua;
+  margin-left: 10px;
+}

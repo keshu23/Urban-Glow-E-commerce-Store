@@ -1,19 +1,29 @@
+import { lazy, Suspense } from "react";
 import "./App.css";
 
 import { Routes, Route } from "react-router-dom";
 
-import Home from "./components/Home";
-import Products from "./components/Products";
-import Service from "./components/Service";
+const Home = lazy(() => import("./components/Home" /));
+
+const Product = lazy(() => import("./components/Products"));
+const Cart = lazy(() => import("./components/Cart"));
 
 function App() {
   return (
     <>
-      <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/product" element={<Products />} />
-        <Route path="/service" element={<Service />} />
-      </Routes>
+      <Suspense
+        fallback={
+          <h1 className="text-center text-purple-500 pt-10 font-bold">
+            wait your page is Loading...
+          </h1>
+        }
+      >
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/product" element={<Product />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </Suspense>
     </>
   );
 }

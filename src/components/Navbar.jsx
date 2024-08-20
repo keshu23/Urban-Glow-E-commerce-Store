@@ -1,24 +1,18 @@
-import { useState } from "react";
+import { useSelector } from "react-redux";
 import "../styles/Navbar.css";
-import { IoMdNotifications } from "react-icons/io";
-import Notify from "../components/Notify";
+
 import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
-  const [display, setDisplay] = useState(false);
-  const obj = { display, setDisplay };
-
-  const updateDisplay = () => {
-    setDisplay(!display);
-  };
+  const items = useSelector((state) => state.cart);
 
   return (
     <>
       <div className="navbar">
         <div className="navbar-logo">
-          <NavLink to="/" activeClassName="active">
+          <NavLink to="/" activeClassName="active" className="text-purple-500">
             Urban Glow
-          </NavLink>{" "}
+          </NavLink>
         </div>
 
         <div className="navbar-list">
@@ -32,19 +26,15 @@ export default function Navbar() {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/service" activeClassName="active">
-                Services
+              <NavLink to="/cart" activeClassName="active" className="text-lg">
+                Cart
               </NavLink>
             </li>
 
-            <li className="notify">
-              <IoMdNotifications onClick={updateDisplay} />
-            </li>
+            <li className="ml-10 text-cyan-800">Cart-Items: {items.length}</li>
           </ul>
         </div>
       </div>
-
-      {display && <Notify obj={obj} />}
     </>
   );
 }

@@ -4,21 +4,19 @@
   justify-content: space-between;
   height: 10vh;
   display: flex;
- height: 5;
+  height: 5;
   padding-left: 20px;
   background-color: #f1e9da;
   z-index: 1;
   text-decoration: none;
   box-shadow: 5px 5px 15px 5px grey;
-  
 }
 .navbar-logo {
   font-size: 1.4em;
   font-weight: bold;
   padding-left: 10px;
- padding-top: 20px;
+  padding-top: 20px;
   color: black;
-  
 }
 
 .navbar-logo:hover {
@@ -26,29 +24,20 @@
   cursor: pointer;
 }
 
-
-
 .navbar-items {
   display: flex;
   font-size: 1.4em;
   font-weight: bold;
   padding-top: 20px;
+  margin-right: 5vw;
 }
 
 .navbar-items li {
   list-style-type: none;
   padding-left: 30px;
-  
 }
 .navbar-items li Link {
   text-decoration: none;
-}
-
-.notify {
-  padding-top: 5px;
-  font-size: 1.2em;
-  margin-right: 30px;
-
 }
 
 .active {
