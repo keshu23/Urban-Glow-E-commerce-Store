@@ -3,11 +3,7 @@ import "./App.css";
 
 import { Routes, Route } from "react-router-dom";
 
-<<<<<<< HEAD
 const Home = lazy(() => import("./components/Home"));
-=======
-const Home = lazy(() => import("./components/Home" ));
->>>>>>> 8d40b1014f446e5ea114b083955b6521863b1831
 
 const Product = lazy(() => import("./components/Products"));
 const Cart = lazy(() => import("./components/Cart"));
