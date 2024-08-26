@@ -26,8 +26,20 @@ export default function Navbar() {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/cart" activeClassName="active" className="text-lg">
+              <NavLink
+                to="/cart"
+                activeClassName="active"
+                className="text-lg text-purple-500"
+              >
                 Cart
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink to="/login" activeClassName="active">
+                <button className="bg-cyan-800 pl-[2px] pr-[2px] p-2 text-white rounded-lg h-[30px] text-sm">
+                  LogIn
+                </button>
               </NavLink>
             </li>
 

@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react";
 import "./App.css";
 
 import { Routes, Route } from "react-router-dom";
+import Login from "./components/pages/Login";
 
 const Home = lazy(() => import("./components/Home"));
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/product" element={<Product />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </Suspense>
     </>
